@@ -17,7 +17,7 @@ A program a **test_stream_url** funkcióban ellenőrzi az adott stream elérhet�
 Alapesetben 1 KB (1024 B) adatot nyerünk ki a streamből amely a legtöbb esetben elegendő a működőképesség megállapítására. Szükség esetén ez a **chunk_size** változóval módosítható
 
 ## Adatok feldolgozása
-Az M3U és M3U8 állományok betöltésére mind fájlból mind pedig link segítségével is van mód. Amennyiben M3U állománnyal dolgozunk úgy szükséges a fájból a különböző streamek adatait kinyernünk.
+Az M3U és M3U8 állományok betöltésére van lehetőség fájlból és HTTP/HTTPS URL segítségével. Amennyiben M3U állománnyal dolgozunk úgy szükséges a fájból a különböző streamek adatait kinyernünk.
 Az állományokól az alábbi adatokat nyeri ki a program:
 - channel_name - Csatorna neve
 - url_line - Stream URL
