@@ -25,6 +25,7 @@ Az állományokól az alábbi adatokat nyeri ki a program:
 - channel_group - Kategória
 - channel_language - A csatorna eredeti nyelve
 - channel_country - Ország
+
 Ezek az adatok hasznosak lehetnek a streaming szoftvernek való átadásnál (Például: Plex, Jellyfin, Emby)
 
 A GUI segítségével ellenőrizhetjük, hogy mely streamek elérhetőek és melyek nem. 
