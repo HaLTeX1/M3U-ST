@@ -14,3 +14,24 @@ A szoftver célja, hogy legyen mód tesztelni egy már meglévő M3U vagy M3U8 f
 ## Tesztelési logika
 
 A program a **test_stream_url** funkcióban ellenőrzi az adott stream elérhetőségét. Amennyiben nem elérhető egy stream úgy false értékkel tér vissza. A stream működésére vonatkozó adatokat egy **GET** HTTP kérés segítségével kérdezzük le. *(Itt van lehetőség HEAD lekérdezést is alkalmazni, viszont ezt nem minden kiszolgáló támogatja)*
+Alapesetben 1 KB (1024 B) adatot nyerünk ki a streamből amely a legtöbb esetben elegendő a működőképesség megállapítására. Szükség esetén ez a **chunk_size** változóval módosítható
+
+## Adatok feldolgozása
+Az M3U és M3U8 állományok betöltésére mind fájlból mind pedig link segítségével is van mód. Amennyiben M3U állománnyal dolgozunk úgy szükséges a fájból a különböző streamek adatait kinyernünk.
+Az állományokól az alábbi adatokat nyeri ki a program:
+- channel_name - Csatorna neve
+- url_line - Stream URL
+- channel_logo - LOGO
+- channel_group - Kategória
+- channel_language - A csatorna eredeti nyelve
+- channel_country - Ország
+Ezek az adatok hasznosak lehetnek a streaming szoftvernek való átadásnál (Például: Plex, Jellyfin, Emby)
+
+A GUI segítségével ellenőrizhetjük, hogy mely streamek elérhetőek és melyek nem. 
+
+## Új állomány összeállítása
+A tesztelés végeztével elérhetővé válik a **"Működő csatornák mentése"** gomb amellyel van lehetőségünk rá hogy a tesztelt és működő streameket becsomagoljuk egy M3U állományba amelyet így könnyebben tudunk használni egy streaming szoftverben, 
+
+## Inspiráció, ötletgazda
+- [iptv-org - iptv ](https://github.com/iptv-org/iptv)
+
