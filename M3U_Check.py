@@ -1,4 +1,4 @@
-# 2025.06.11 
+# 2025.06.11
 import tkinter as tk
 from tkinter import filedialog, scrolledtext, messagebox
 import threading
@@ -14,8 +14,6 @@ def test_stream_url(url, timeout=10):
     Visszaadja True-t, ha működik, False-t különben.
     """
     try:
-        # HEAD kérés küldése a gyors ellenőrzéshez, hogy elérhető-e a forrás
-        # de a valós stream ellenőrzéshez GET szükséges, mert a HEAD nem mindig elegendő.
         # Itt egyszerűsítünk, GET-tel próbálunk adatot olvasni.
         start_time = time.time()
         with requests.get(url, stream=True, timeout=timeout) as r:
