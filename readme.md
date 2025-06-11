@@ -1,4 +1,4 @@
-# M3U Stream Tester
+# M3U Stream Tester (M3U-ST)
 
 A szoftver célja, hogy legyen mód tesztelni egy már meglévő M3U vagy M3U8 formátumú fájlt. A program ellenőrzi, hogy az időtúllépés előtt érkezik-e válasz a stream kiszolgálójától és hogy a streamből van-e letölthető adat. 
 
