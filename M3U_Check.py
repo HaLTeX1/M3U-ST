@@ -1,3 +1,4 @@
+# 2025.06.11 
 import tkinter as tk
 from tkinter import filedialog, scrolledtext, messagebox
 import threading
