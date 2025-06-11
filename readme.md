@@ -31,7 +31,7 @@ Ezek az adatok hasznosak lehetnek a streaming szoftvernek való átadásnál (P�
 A GUI segítségével ellenőrizhetjük, hogy mely streamek elérhetőek és melyek nem. 
 
 ## Új állomány összeállítása
-A tesztelés végeztével elérhetővé válik a **"Működő csatornák mentése"** gomb amellyel van lehetőségünk rá hogy a tesztelt és működő streameket becsomagoljuk egy M3U állományba amelyet így könnyebben tudunk használni egy streaming szoftverben, 
+A tesztelés végeztével elérhetővé válik a **"Működő csatornák mentése"** gomb amellyel van lehetőségünk rá hogy a tesztelt és működő streameket becsomagoljuk egy M3U állományba amelyet így könnyebben tudunk használni egy streaming szoftverben. Szükség esetén **.txt** állományba is van lehetőség menteni a listát.
 
 ## Inspiráció, ötletgazda
 - [iptv-org - iptv ](https://github.com/iptv-org/iptv)
